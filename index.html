@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot - Multilenguaje</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="language-text"  data-key="title">Chatbot About Raul</h1>
+            <p class="language-text"  data-key="intro">Hello! I'm a chatbot that will help you learn more about Raul.</p>
+            <p  class="language-text" data-key="intro2">Ask me a short and concise question!</p>
+            <label for="language" class="language-label , language-text" data-key="selectLabel">Select Language:</label>
+            <select id="language" class="language-select">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="ca">Valencià</option>
+            </select>
+        </header>
+        
+        <!-- Sección de historial de chat -->
+        <section id="chatHistory" class="chat-history">
+            <!-- Las preguntas y respuestas se agregarán aquí -->
+        </section>
+        
+        <!-- Área de entrada de pregunta -->
+        <div class="input-section">
+            <textarea id="question" placeholder=" Ask your question here" aria-label="Escribe tu pregunta"></textarea>
+            <button id="askButton" class="language-text" data-key="send" >Send</button>
+            <button id="clearButton" class="clear-btn" aria-label="Limpiar chat">🗑️</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
