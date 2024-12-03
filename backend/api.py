@@ -12,7 +12,7 @@ os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 os.environ["TF_ENABLE_MKL"] = "0"
 
 # Cargar el archivo CSV con las preguntas y respuestas
-csv_file = 'preguntas.csv'  # Asegúrate de tener el archivo CSV en la misma carpeta
+csv_file = './backend/preguntas.csv'  # Asegúrate de tener el archivo CSV en la misma carpeta
 df = pd.read_csv(csv_file)
 
 # Crear la app de Flask
