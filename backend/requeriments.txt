@@ -1,0 +1,5 @@
+Flask
+pandas
+fuzzywuzzy
+Flask-CORS
+googletrans==4.0.0-rc1
