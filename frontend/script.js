@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function askQuestion(question, language) {
         try {
             // Enviar la pregunta al backend
-            const response = await fetch('http://127.0.0.1:5000/ask', {
+            const response = await fetch('https://chatbot-gj8u.onrender.com/ask', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

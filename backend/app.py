@@ -18,6 +18,9 @@ app = Flask(__name__)
 
 # Habilitar CORS para todas las rutas
 CORS(app)
+@app.route('/')
+def home():
+    return "¡Bienvenido a la API de preguntas!"
 
 # Inicializamos el traductor
 translator = Translator()
