@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     language: language   // Idioma
                 })
             });
+            
 
             const data = await response.json();
 
